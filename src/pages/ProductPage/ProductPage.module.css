@@ -1,0 +1,33 @@
+.main {
+  width: 98vw;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  /* border: 1px solid red; */
+  background: rgba(194, 208, 209, 0.507);
+}
+
+.carouselHolder {
+  /* border: 2px solid rgb(23, 4, 75); */
+  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bodyContainer {
+  /* it have product and filter (flex) */
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .carouselHolder {
+    display: none;
+  }
+
+  .bodyContainer {
+    flex-direction: column;
+  }
+}
