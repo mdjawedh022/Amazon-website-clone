@@ -25,7 +25,7 @@ const Login = () => {
   const handleClick = () => setShow(!show);
   const navigate = useNavigate();
   const location = useLocation();
-  const commingFrom = location.state.data || "/";
+  const commingFrom = location?.state?.data || "/";
   // console.log("commingfrom",commingFrom);
 
   const handlelogin = async (e) => {
